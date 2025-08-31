@@ -6,6 +6,7 @@ ARTICLES_FOLDER = 'articles'
 DB_FOLDER = 'chroma_storage'
 DATA_FOLDER = 'data'
 EUROPEAN_ACT_URL='https://www.europarl.europa.eu/doceo/document/TA-9-2024-0138_EN.pdf'
+NITI_AYOG_URL = 'https://www.niti.gov.in/sites/default/files/2023-03/National-Strategy-for-Artificial-Intelligence.pdf'
 
 # load articles data from file_name (.json)
 def load_articles(file_name) -> list:
