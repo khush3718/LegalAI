@@ -1,4 +1,4 @@
-```markdown
+
 # LegalAI Architecture and Design
 
 ## Project Overview
