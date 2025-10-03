@@ -14,19 +14,19 @@ The LegalAI system consists of the following main components:
 *   **Embedding Module (embed.py):** Handles the embedding of documents into a vector store.
 *   **Utilities (utils.py):** Defines constants and utility functions for file paths, URLs, and data handling.
 
-```mermaid
-graph LR
-    User[User Interface (Streamlit)] -->|Uploads Documents, Asks Questions| App(app.py)
-    App -->|Sends Question| Agent(agent.py)
-    Agent -->|Retrieves Context| ChromaDB[ChromaDB Vector Store]
-    ChromaDB -->|Returns Context| Agent
-    Agent -->|Generates Answer| Gemini[Google Gemini LLM]
-    Gemini -->|Returns Answer| App
-    App -->|Displays Answer| User
-    App -->|Embeds Documents| Embed(embed.py)
-    Embed -->|Stores Embeddings| ChromaDB
-    Embed -->|Fetches Documents| Utils(utils.py)
-```
+    ```mermaid
+      graph LR
+        User["User Interface (Streamlit)"] -->|Uploads Documents, Asks Questions| App["app.py"]
+        App -->|Sends Question| Agent["agent.py"]
+        Agent -->|Retrieves Context| ChromaDB["ChromaDB Vector Store"]
+        ChromaDB -->|Returns Context| Agent
+        Agent -->|Generates Answer| Gemini["Google Gemini LLM"]
+        Gemini -->|Returns Answer| App
+        App -->|Displays Answer| User
+        App -->|Embeds Documents| Embed["embed.py"]
+        Embed -->|Stores Embeddings| ChromaDB
+        Embed -->|Fetches Documents| Utils["utils.py"]
+    ```
 
 ### Component Details
 
